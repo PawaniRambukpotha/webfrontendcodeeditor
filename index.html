@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+
+		<div class="split left">
+			<div class="tabContainer">
+				<div class="buttonContainer">
+					<button onclick="showPanel(0,'#F8F8FF')">HTML</button>
+					<button onclick="showPanel(1,'#F8F8FF')">CSS</button>
+					<button onclick="showPanel(2,'#F8F8FF')">JS</button>
+				</div>
+				<textarea class="tabPanel" id="html-code" cols="80" rows="20"></textarea>
+				<textarea class="tabPanel" id="css-code" cols="90" rows="20"></textarea>
+				<textarea class="tabPanel" id="js-code" cols="90" rows="20"></textarea>
+				
+			</div>
+			
+		</div>
+
+		<div class="split right">
+			<iframe class="iframe" id="output" ></iframe>
+		</div>
+
+	</div>
+
+
+
+<script src="main.js"></script>
+	
+</body>
+</html>
